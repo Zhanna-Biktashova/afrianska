@@ -1,8 +1,86 @@
-html {
-  box-sizing: border-box;
+@import '_vars';
+@import '_global';
+@import '_fonts';
+
+
+// start header 
+
+.header{
+   position: relative;
+   background-position-x: right;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+   width: 100%;
+   &__top{
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+      &-inner{
+         padding-top: 40px;
+         min-height: 83px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         .logo{
+            &__image{
+               width: 48px;
+               height: 32px;
+            }
+         }
+         .menu{
+            &__button{
+               border: none;
+               background-color: transparent;
+               outline: none;
+               cursor: pointer;
+            }
+            &__image{
+               width: 32px;
+               height: 32px;
+            }
+         }
+      }
+   }
+   &__inner{
+      padding: 110px 0;
+      &-title{
+         max-width: 600px;
+         width: 100%;
+         @include gal700;
+         font-size: 64px;
+         line-height: 74px;
+         letter-spacing: 0.04em;
+         margin-bottom: 32px;
+      }
+      &-text{
+         max-width: 420px;
+         width: 100%;
+         opacity: 0.6;
+         margin-bottom: 71px;
+      }
+      &-link{
+         text-align: center;
+         letter-spacing: 0.04em;
+         color: #fff;
+         background: #5A98D0;
+         box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+         border-radius: 10px;
+         padding: 15px;
+         width: 220px;
+      }
+   }
 }
-*,
-*::before,
-*::after{
-  box-sizing: inherit;
+
+// end header
+
+// start digital
+
+.digital{
+   &__inner{
+      padding: 180px 0 212px;
+   }
 }
+
+
+// end digital 

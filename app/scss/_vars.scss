@@ -1,0 +1,19 @@
+@mixin gal700 {
+   font-family: "Galien-Bold", serif;
+   font-weight: 700;
+}
+@mixin gil300 {
+   font-family: "Gilroy-Light", sans-serif;
+   font-weight: 300;
+}
+@mixin gil400 {
+   font-family: "Gilroy-Regular", sans-serif;
+   font-weight: 400;
+}
+@mixin gil600 {
+   font-family: "Gilroy-SemiBold", sans-serif;
+   font-weight: 600;
+}
+
+$text: #1F3F68;
+$head: #316099;
