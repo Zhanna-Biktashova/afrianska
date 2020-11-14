@@ -12,6 +12,14 @@
    background-size: cover;
    height: 100vh;
    width: 100%;
+   &.header-page{
+      // height: 130px;
+      height: auto;
+      .header__top-inner{
+         min-height: 130px;
+         padding-top: 0;
+      }
+   }
    &__top{
       max-width: 1200px;
       margin: 0 auto;
@@ -68,6 +76,34 @@
          border-radius: 10px;
          padding: 15px;
          width: 220px;
+      }
+   }
+   &__content{
+      background-image: url(../images/contact-bg.jpg);
+      min-height: 250px;
+      width: 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      &-inner{
+         padding: 60px 110px 50px;
+      }
+      &-title{
+         font-size: 44px;
+         line-height: 74px;
+         text-align: center;
+         letter-spacing: 0.04em;
+         color: #FFFFFF;
+         @include gil600;
+         margin-bottom: 16px;
+      }
+      &-text{
+         font-size: 20px;
+         line-height: 30px;
+         text-align: center;
+         letter-spacing: 0.04em;
+         color: rgba(255, 255, 255, 0.6);
       }
    }
 }
@@ -162,12 +198,156 @@
 
 // end digital 
 
+// start contact
+
+.contact{
+   &__inner{
+      padding: 60px 0 80px;
+      display: flex;
+      justify-content: space-between;
+   }
+   &__aside{
+      max-width: 325px;
+      width: 100%;
+      &-image{
+         text-align: center;
+         padding-top: 60px;
+      }
+      &-img{
+         background-repeat: no-repeat;
+         background-position: center center;
+         background-size: cover;
+      }
+      &-title{
+         font-size: 20px;
+         line-height: 30px;
+         letter-spacing: 0.04em;
+         @include gil600;
+         margin-bottom: 24px;
+      }
+      &-address{
+         letter-spacing: 0.04em;
+         color: #1F3F68;
+         opacity: 0.6;
+         @include gil300;
+         margin-bottom: 40px;
+      }
+      &-phone,
+      &-site,
+      &-mail{
+         position: relative;
+         padding-left: 37px;
+         letter-spacing: 0.04em;
+         color: #1F3F68;
+         opacity: 0.6;
+         @include gil300;
+         display: flex;
+         align-items: center;
+         &--one{
+            margin-bottom: 16px;
+         }
+         &--two{
+            margin-bottom: 40px;
+         }
+         img{
+            position: absolute;
+            left: 0;
+         }
+      }
+      &-site{
+         margin-bottom: 16px;
+      }
+      &-mail{
+         margin-bottom: 40px;
+      }
+   }
+   &__form{
+      max-width: 540px;
+      width: 100%;
+      background: #FFFFFF;
+      box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+      border-radius: 10px;
+      &-inner{
+         padding: 56px;
+      }
+      &-title{
+         font-size: 20px;
+         line-height: 30px;
+         @include gil600;
+         letter-spacing: 0.04em;
+         margin-bottom: 48px;
+         text-transform: uppercase;
+      }
+     &-name,
+     &-email,
+     &-message{
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: 0.04em;
+      opacity: 0.8;
+      margin-bottom: 8px;
+     }
+     input,
+     textarea{
+        font-size: 16px;
+        line-height: 30px;
+        width: 100%;
+        padding: 21px 42px;
+        opacity: 0.4;
+        border: 1px solid #356EAD;
+        box-sizing: border-box;
+        border-radius: 10px;
+        outline: none;
+        margin-bottom: 32px;
+        &::placeholder{
+         font-size: 16px;
+         line-height: 30px;
+         letter-spacing: 0.04em;
+         opacity: 0.2;
+         @include gil300;
+        }
+     }
+     textarea{
+      min-height: 145px;
+      resize: none;
+     }
+     button{
+        text-align: center;
+        letter-spacing: 0.04em;
+        @include gil600;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        width: 100%;
+        background: #5A98D0;
+        box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+        border-radius: 10px;
+        padding: 23px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+
+   }
+   &__map{
+      margin-bottom: 96px;
+      iframe{
+         width: 100%;
+         height: 480px;
+      }
+   }
+}
+
+// end contact
+
 // start footer
 
 .footer{
    background: #5A98D0;
    border-radius: 200px 0px 0px 0px;
    color: #fff;
+   &.footer-page{
+      background-color: #fff;
+   }
    &__client{
       &-inner{
          padding: 96px 0 125px;

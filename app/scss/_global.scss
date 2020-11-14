@@ -42,4 +42,15 @@ html {
    padding: 0 15px;
    max-width: 970px;
  }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
  
